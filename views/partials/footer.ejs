@@ -1,0 +1,19 @@
+    <script>
+        function checkPassword(form) {
+            password1 = form.password1.value;
+            password2 = form.password2.value;
+
+            if (password1 != password2) {
+                alert("\nPassword did not match!")
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
