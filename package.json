@@ -4,15 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=9.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RitwickBhargav/PackageDelivery.git"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^7.0.0",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "mongoose": "^5.4.16",
-    "path": "^0.12.7"
+    "mongoose": "^5.4.16"
   }
 }
