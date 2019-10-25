@@ -55,8 +55,11 @@ app.post("/register", (req, res) => {
             });
         }
     })
-
 });
+
+app.get("*", (req, res) => {
+    res.send({message: 'Error 404! Page Not Found'});
+}
 
 app.listen(process.env.PORT, (err) => {
     if (err) {
