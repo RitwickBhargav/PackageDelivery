@@ -48,8 +48,10 @@ app.post("/register", (req, res) => {
         } else {
             User.create({name: req.body.name, email: req.body.email, password: req.body.password1}, (err, done) => {
                 if (err) {
+                    res.status(400);
                     res.render("error", {message: "error"});
                 } else {
+                    res.status(200);
                     res.render("index1");
                 }
             });
